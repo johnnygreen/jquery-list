@@ -83,7 +83,7 @@
 			/**
 			 * List element scroll handler event. Called to animate and substitute heading blocks.
 			 */
-			scroll : function(){
+			scroll : function(event){
 				var $this = $(this),data = $this.data(plugin_name);
 				
 				if( data ){
@@ -152,7 +152,7 @@
 					
 					if( trigger || max || data.max && !max ){
 						// Trigger the headingChange event.
-						$this.trigger('headingChange',[data.currentHeader,data.headers.eq(data.currentHeader),max]);
+						$this.trigger('headingChange',[data.currentHeader,data.headers.eq(data.currentHeader),max,event]);
 					}
 					
 					data.max = max;
