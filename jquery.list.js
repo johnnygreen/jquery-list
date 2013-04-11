@@ -104,7 +104,7 @@
 					 	var top		= currentHeader.offset().top,
 					 		height	= currentHeader.outerHeight();
 					 	
-					 	if( top > data.containerTop ){
+					 	if( Math.floor(top) > Math.floor(data.containerTop) ){
 					 		
 					 		data.fakeHeader.css('top',(top-height)-data.containerTop);
 					 		_private.updateHeader($this, prevHeader);
