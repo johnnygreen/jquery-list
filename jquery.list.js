@@ -244,7 +244,7 @@
 				    });
 					
 					// Bind the resize event to the window.
-					$(window).bind('resize.'+plugin_name,$.proxy(_private.events.resize,$this));
+					//$(window).bind('resize.'+plugin_name,$.proxy(_private.events.resize,$this));
 				   
 				    // Add the fake header before all other children, and set the HTML.
 				    $this.data(plugin_name,data).prepend( data.fakeHeader );
